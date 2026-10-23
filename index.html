@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API - Consulta de CEP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .container {
+            max-width: 400px;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #mensagem {
+            color: red;
+            margin-top: 15px;
+        }
+        #rua {
+            color: green;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Busca de Endereço via CEP</h2>
+        <label for="cepInput">Digite o CEP:</label>
+        <input type="text" id="cepInput" placeholder="Ex: 01001000" maxlength="8">
+        <button onclick="executarBusca()">Buscar CEP</button>
+
+        <!-- Elementos atualizados dinamicamente no DOM -->
+        <div id="rua"></div>
+        <div id="mensagem"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
